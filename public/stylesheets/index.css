@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lora&family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Koulen', cursive;
+}
+
+.container{
+    width: 40%;
+    margin: auto;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.task__register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid rgb(200, 197, 197);
+    border-bottom: 1px solid rgb(200, 197, 197);
+    border-right: 12px solid rgb(45, 152, 218);
+    border-left: 12px solid rgb(45, 152, 218);
+    padding: 1em 3em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(201, 201, 201);
+}
+
+.task__heading p{
+    color: rgb(25, 25, 102);
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.task__input-cont{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    /* justify-content: center;
+    align-items: center; */
+    border: 1px solid rgb(189, 186, 186);
+    border-radius: 10px;
+}
+
+.task__input-cont div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.task__input-field{
+    font-size: 2rem;
+    outline: none;
+    height: 101%;
+    width: 100% ;
+    border-radius: 10px;
+    border: none;
+}
+
+.task__submit{
+    color: white;
+    /* height: 2.4rem;
+    width: 4rem; */
+    height: 101%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(92, 158, 206);
+}
+
+.task__submit:active{
+    background-color: rgb(37, 83, 116);
+}
+
+/* tasklist css */
+
+.tasklist{
+    border: 1px solid rgb(183, 182, 182);
+    width: 100%;
+    margin: 4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 23em;
+    overflow-y: scroll;
+}
+.tasklist::-webkit-scrollbar{
+    width: 10px;
+}
+
+.tasklist::-webkit-scrollbar-track{
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+}
+
+.tasklist::-webkit-slider-thumb{
+    background-color: gray;
+}
+
+/* taskelement css */
+
+.taskelement__item{
+    width: 70%;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border: 1px solid rgb(220, 220, 220)
+}
+
+.taskelement__item p{
+    color: rgb(22, 107, 153);
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.taskelement__img-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.taskelement__img-cont img{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+
+    .task__heading p{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .task__input-cont{
+        grid-template-columns: 70% 30%;
+    }
+
+    .task__input-field{
+        font-size: 1rem;
+        height: 2em;
+    }
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="task, manager, task manager">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/modal.css">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="task__register">
+            <div class="task__heading">
+                <p>Task Manager</p>
+            </div>
+            <div class="task__input-cont">
+                <div>
+                    <input type="text" placeholder="drink coffee" class="task__input-field">
+                </div>
+                <div>
+                    <button type="button" class="task__submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="tasklist">
+        </div>
+    </div>
+    <div class="taskedit__modal-cont hide" id="modal">
+        <div class="taskedit__modal">
+            <div id="taskmodal__close">
+                <img src="/images/close.png">
+            </div>
+            <div class="taskmodal__edit-warning hide">
+                <p>*Change any one of the Field</p>
+            </div>
+            <div class="taskmodal__success-message hide">
+                <p class="successmsg"></p>
+            </div>
+            <div class="taskedit__id">
+                <p>Id:</p>
+                <p class="taskedit__id-input"></p>
+            </div>
+            <div class="taskedit__name">
+                <p>Name:</p>
+                <input class="taskedit__name-input">
+            </div>
+            <div class="taskedit__completed">
+                <p>Completed: </p>
+                <input type="checkbox" id="taskedit__checkbox">
+            </div>
+            <div class="taskmodal__button-cont">
+                <button id="taskmodal__button">Edit</button>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>
